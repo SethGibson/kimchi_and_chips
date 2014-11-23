@@ -6,6 +6,7 @@ http://artandcode.com/3d/workshops/4a-calibrating-projectors-and-cameras
 
 ## Dependencies
 * Visual Studio 2013 (http://www.visualstudio.com/products/visual-studio-community-vs)
+* Kinect for Windows SDK (http://www.microsoft.com/en-us/kinectforwindows/)
 * openFrameworks VS2013 (https://github.com/liquidzym/openFrameworks/tree/VS2013)
 * ofxCv (https://github.com/kylemcdonald/ofxCv.git)
 * ofxCvGui (https://github.com/elliotwoods/ofxCVgui)
