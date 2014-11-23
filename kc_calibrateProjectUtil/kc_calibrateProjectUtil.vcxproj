@@ -117,6 +117,20 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\ETF.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\fdog.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Calibration.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ContourFinder.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Distance.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Flow.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Helpers.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Kalman.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ObjectFinder.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\RunningBackground.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Tracker.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Utilities.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Wrappers.cpp" />
+    <ClCompile Include="..\..\ofxKinectV2\src\ofxKinectCommonBridge.cpp" />
     <ClCompile Include="src\CorrelateXYZtoXY.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\testApp.cpp" />
@@ -131,7 +145,23 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
     </ResourceCompile>
   </ItemGroup>
-  <ItemGroup>
+<ItemGroup>
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\ETF.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\fdog.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\imatrix.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\myvec.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Calibration.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ContourFinder.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Distance.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Flow.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Helpers.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Kalman.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ObjectFinder.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\RunningBackground.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Tracker.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Utilities.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Wrappers.h" />
+    <ClInclude Include="..\..\ofxCv\src\ofxCv.h" />
     <ClInclude Include="src\CorrelateXYZtoXY.h" />
     <ClInclude Include="src\testApp.h" />
   </ItemGroup>

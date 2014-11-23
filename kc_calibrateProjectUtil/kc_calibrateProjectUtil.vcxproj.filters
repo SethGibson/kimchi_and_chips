@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\CorrelateXYZtoXY.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Calibration.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ContourFinder.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Distance.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Flow.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Helpers.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Kalman.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ObjectFinder.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\RunningBackground.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Tracker.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Utilities.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Wrappers.cpp">
+      <Filter>ofxCv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxKinectV2\src\ofxKinectCommonBridge.cpp">
+      <Filter>ofxKinectV2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\ETF.cpp">
+      <Filter>ofxCv\CLD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\fdog.cpp">
+      <Filter>ofxCv\CLD</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CorrelateXYZtoXY.h" />
+    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="..\..\ofxCv\src\ofxCv.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Calibration.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ContourFinder.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Distance.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Flow.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Helpers.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Kalman.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ObjectFinder.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\RunningBackground.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Tracker.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Utilities.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Wrappers.h">
+      <Filter>ofxCv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\myvec.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\ETF.h">
+      <Filter>ofxCv\CLD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\fdog.h">
+      <Filter>ofxCv\CLD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\imatrix.h">
+      <Filter>ofxCv\CLD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ofxCv">
+      <UniqueIdentifier>{c2669918-62ad-4a27-b9d1-79b59a7a148a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxKinectV2">
+      <UniqueIdentifier>{32ef07c9-e7a6-46f6-a507-d5d5c3dae51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxCv\CLD">
+      <UniqueIdentifier>{3b19d378-4f3b-4e5c-a6c6-4d41c3af333e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <Filter>ofxCv\CLD</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

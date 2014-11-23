@@ -57,15 +57,15 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(KINECTSDK20_DIR)\Inc;$(KINECT_TOOLKIT_DIR)\Inc;..\..\..\addons\ofxKinectV2\libs;..\..\..\addons\ofxKinectV2\src;..\..\..\addons\ofxKinectV2\libs\KCBv2;..\..\..\addons\ofxKinectV2\libs\KCBv2\include;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x64;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(KINECTSDK20_DIR)\Inc;$(KINECT_TOOLKIT_DIR)\Inc;..\..\..\addons\ofxKinectV2\libs;..\..\..\addons\ofxKinectV2\src;..\..\..\addons\ofxKinectV2\libs\KCBv2;..\..\..\addons\ofxKinectV2\libs\KCBv2\include;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x64;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\Debug;..\..\..\addons\ofxCv\src;..\..\..\addons\ofxCv\libs\CLD\include;..\..\..\addons\ofxCv\libs\ofxCv\include;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Kinect20.lib;KCBv2.lib%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\lib\$(Configuration);..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Kinect20.lib;KCBv2.lib;opencv_calib3d248d.lib;opencv_contrib248d.lib;opencv_core248d.lib;opencv_features2d248d.lib;opencv_flann248d.lib;opencv_gpu248d.lib;opencv_haartraining_engined.lib;opencv_highgui248d.lib;opencv_imgproc248d.lib;opencv_legacy248d.lib;opencv_ml248d.lib;opencv_nonfree248d.lib;opencv_objdetect248d.lib;opencv_photo248d.lib;opencv_stitching248d.lib;opencv_superres248d.lib;opencv_ts248d.lib;opencv_video248d.lib;opencv_videostab248d.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\lib\$(Configuration);..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\$(Configuration);..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs\*.dll" "$(ProjectDir)bin"xcopy /e /i /y “(ProjectDir)..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\*.dll” “$(ProjectDir)bin”</Command>
@@ -77,7 +77,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(KINECTSDK20_DIR)\Inc;$(KINECT_TOOLKIT_DIR)\Inc;..\..\..\addons\ofxKinectV2\libs;..\..\..\addons\ofxKinectV2\src;..\..\..\addons\ofxKinectV2\libs\KCBv2;..\..\..\addons\ofxKinectV2\libs\KCBv2\include;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x64;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(KINECTSDK20_DIR)\Inc;$(KINECT_TOOLKIT_DIR)\Inc;..\..\..\addons\ofxKinectV2\libs;..\..\..\addons\ofxKinectV2\src;..\..\..\addons\ofxKinectV2\libs\KCBv2;..\..\..\addons\ofxKinectV2\libs\KCBv2\include;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x64;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86;..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\Debug;..\..\..\addons\ofxCv\src;..\..\..\addons\ofxCv\libs\CLD\include;..\..\..\addons\ofxCv\libs\ofxCv\include;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -87,14 +87,28 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Kinect20.lib;KCBv2.lib%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\lib\$(Configuration);..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Kinect20.lib;KCBv2.lib;opencv_calib3d248.lib;opencv_contrib248.lib;opencv_core248.lib;opencv_features2d248.lib;opencv_flann248.lib;opencv_gpu248.lib;opencv_haartraining_engine.lib;opencv_highgui248.lib;opencv_imgproc248.lib;opencv_legacy248.lib;opencv_ml248.lib;opencv_nonfree248.lib;opencv_objdetect248.lib;opencv_photo248.lib;opencv_stitching248.lib;opencv_superres248.lib;opencv_ts248.lib;opencv_video248.lib;opencv_videostab248.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\lib\$(Configuration);..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\$(Configuration);..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs\*.dll" "$(ProjectDir)bin"xcopy /e /i /y “(ProjectDir)..\..\..\addons\ofxKinectV2\libs\KCBv2\lib\x86\*.dll” “$(ProjectDir)bin”</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\ETF.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\CLD\src\fdog.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Calibration.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ContourFinder.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Distance.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Flow.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Helpers.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Kalman.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\ObjectFinder.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\RunningBackground.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Tracker.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Utilities.cpp" />
+    <ClCompile Include="..\..\ofxCv\libs\ofxCv\src\Wrappers.cpp" />
+    <ClCompile Include="..\..\ofxKinectV2\src\ofxKinectCommonBridge.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\testApp.cpp" />
   </ItemGroup>
@@ -109,6 +123,23 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\ETF.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\fdog.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\imatrix.h" />
+    <ClInclude Include="..\..\ofxCv\libs\CLD\include\CLD\myvec.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Calibration.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ContourFinder.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Distance.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Flow.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Helpers.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Kalman.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\ObjectFinder.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\RunningBackground.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Tracker.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Utilities.h" />
+    <ClInclude Include="..\..\ofxCv\libs\ofxCv\include\ofxCv\Wrappers.h" />
+    <ClInclude Include="..\..\ofxCv\src\ofxCv.h" />
+    <ClInclude Include="..\..\ofxKinectV2\src\ofxKinectCommonBridge.h" />
     <ClInclude Include="src\testApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
