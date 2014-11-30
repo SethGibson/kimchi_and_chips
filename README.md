@@ -19,4 +19,4 @@ http://artandcode.com/3d/workshops/4a-calibrating-projectors-and-cameras
 * ofxPolyfit (https://github.com/elliotwoods/ofxPolyfit)
 * Simple GUI
 
-_DISCLAIMER: I didn't mean to leave Kyle McDonald out of the credit for this when I named the repo, and I realize this wasn't a strictly Kimchi and Chips project, it was late and I was in a hurry, apologies where required._
+_DISCLAIMER: I didn't mean to leave Kyle McDonald, CMU, Studio for Creative Inquiry, or anyone else out of the credit for this when I named the repo, and I realize this wasn't a strictly Kimchi and Chips project, it was late and I was in a hurry, apologies where required._
